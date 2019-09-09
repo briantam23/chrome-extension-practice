@@ -1,9 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var checkPageButton = document.getElementById('test-button');
-    checkPageButton.addEventListener('click', function() {
-  
-      chrome.tabs.getSelected(null, function(tab) {
-        alert("Trying out Chrome Extensions.");
-      });
-    }, false);
-}, false);
+document.addEventListener('DOMContentLoaded', () => {
+    const checkPageButton = document.getElementById('test-button');
+
+    checkPageButton.addEventListener('click', () => {
+        chrome.tabs.getSelected(null, (tab) => alert("Trying out Chrome Extensions."));
+    
+    }, false)
+}, false)
