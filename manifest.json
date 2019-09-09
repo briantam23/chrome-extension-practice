@@ -1,0 +1,16 @@
+{
+    "manifest_version": 1,
+ 
+    "name": "Foo", 
+    "description": "Trying out Chrome Extensions.",
+    "version": "1.0",
+    "author": "Brian Tam",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Trying out Chrome Extensions."
+    },
+    "permissions": [
+        "activeTab"
+     ]
+}
